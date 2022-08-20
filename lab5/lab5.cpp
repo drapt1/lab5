@@ -1,7 +1,5 @@
 ﻿#include <iostream>
-
 using namespace std;
-
 int main()
 {
     int mas[100][100];
@@ -28,13 +26,13 @@ int main()
             if (j == n - 1) cout << endl;
         }
     }
-    for (i = 1; i < n; i++)//поиск строки и столбца, у которых первые элементы равны
+    for (i = 1; i < n; i++)                 //поиск строки и столбца, у которых первые элементы равны
     {
         for (j = 1; j < n; j++)
         {
             if (mas[i][0] == mas[0][j])
             {
-                for (k = 0; k < n; k++)  //обмен строки и столбца
+                for (k = 0; k < n; k++)    //обмен строки и столбца
                 {
                     a = mas[i][k];
                     mas[i][k] = mas[k][j];
